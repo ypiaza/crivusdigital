@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className="h-[99vh] grid grid-cols-2">
       <div className="flex flex-col items-start justify-center px-16">
-        <h2 className="text-3xl font-bold mb-10 text-[#57C690]">Quem Somos?</h2>
+        <h2 className="text-4xl font-bold mb-10 text-[#57C690]">Quem Somos?</h2>
         <p className="max-w-2xl mx-auto text-[#161616] font-semibold text-[1.1rem] text-justify ">
           A Crivus nasceu para conectar negócios ao mundo digital de forma simples, eficiente e bonita.
           Somos apaixonados por criar sites que não só impressionam, mas também geram resultados.
