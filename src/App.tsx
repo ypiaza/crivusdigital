@@ -2,6 +2,7 @@ import AboutUs from "./components/AboutUs"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Portifolio from "./components/Portifolio"
+import ScrollButton from "./components/ScrollButtom"
 import Testimonials from "./components/Testimonials"
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <section id="testimonials">
         <Testimonials />
       </section>
+      <ScrollButton />
     </div>
   )
 }
