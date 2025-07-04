@@ -16,7 +16,7 @@ const AboutUs = () => {
       </div>
 
       <div className='flex items-center justify-center'>
-        <img className='w-[15rem] hover:scale-3d hover:scale-130 transition-all duration-300' src={logoClean} alt="logo" />
+        <img className='w-[15rem] transition-all duration-300' src={logoClean} alt="logo" />
       </div>
     </div>
   )

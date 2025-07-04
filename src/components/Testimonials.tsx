@@ -1,5 +1,4 @@
 import { testimonials } from "../data/testimonial"
-import ButtonCTA from "./ButtonCTA"
 
 const Testimonials = () => {
   return (
@@ -18,8 +17,6 @@ const Testimonials = () => {
           </div>
         )}
       </div>
-
-      <ButtonCTA />
     </div>
   )
 }

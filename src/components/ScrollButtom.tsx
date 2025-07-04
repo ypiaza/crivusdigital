@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
 import { Link } from "react-scroll";
-import logo from '/crivus.svg'
 
 const ScrollButton = () => {
     const [show, setShow] = useState(false);
-    const [hover, setHover] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
