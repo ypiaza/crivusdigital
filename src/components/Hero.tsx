@@ -3,7 +3,7 @@ import ButtonCTA from './ButtonCTA'
 
 const QuemSomos = () => {
     return (
-        <div className="relative grid grid-cols-2 h-[89vh] bg-center bg-cover bg-no-repeat" style={{
+        <div className="relative grid grid-cols-2 h-[100vh] bg-center bg-cover bg-no-repeat" style={{
                     backgroundImage: `url(${backgroundHero})`
                 }}>
 

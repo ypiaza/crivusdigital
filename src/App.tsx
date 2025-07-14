@@ -8,6 +8,7 @@ import ScrollButton from "./components/ScrollButtom"
 import Testimonials from "./components/Testimonials"
 
 import logo from '../src/assets/logo-clean.svg'
+import Services from "./components/Services"
 
 const App = () => {
   return (

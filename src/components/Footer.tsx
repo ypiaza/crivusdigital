@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-[#161616] py-10">
+    <footer className="bg-white/90 text-[#161616] py-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
         <p className="text-sm">
           © 2025 Crivus Digital. Todos os direitos reservados.

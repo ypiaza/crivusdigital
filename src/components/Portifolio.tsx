@@ -1,23 +1,14 @@
 import { projects } from "../data/portifolio"
-import background from '../assets/background-projetos.jpg'
 
 const Portifolio = () => {
     return (
-        <div className="relative h-[99vh] flex items-center justify-evenly flex-col bg-center bg-cover bg-no-repeat"
-            style={{
-                backgroundImage: `url(${background})`,
-                backgroundPosition: 'fixed'
-            }}
-        >
-
-            <div className="absolute inset-0 bg-black/90 "></div>
+        <div className="relative h-[99vh] grid grid-cols-2 justify-evenly flex-col">
 
             {/* Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/natureza-textura-plantar-planta-4429283/ */}
 
-            <div className="z-10">
-                <h2 className="text-5xl font-bold text-[#fafafa]">Projetos já enraizados</h2>
-            </div>
-            <div className="grid grid-cols-4 gap-5 z-10 cursor-pointer">
+            <div className="absolute inset-0"></div>
+
+            <div className="grid grid-cols-2 items-center justify-center place-items-center p-10 gap-5 z-10 cursor-pointer">
                 {projects.map((item) => 
                     <div className="max-w-[18rem] h-[15rem] flex flex-col items-center justify-between bg-[#fafafa] rounded shadow hover:scale-3d hover:scale-105 hover:shadow-2xl hover:z-10 transition-all duration-300">
                         <img className="h-[70%] max-w-full shadow" src={item.img} alt={item.name} />
@@ -26,6 +17,9 @@ const Portifolio = () => {
                         </div>
                     </div>
                 )}
+            </div>
+            <div className="rounded-tl-[50%] flex items-center justify-evenly border-l-6 border-[#57C690] bg-white">
+                <h2 className="text-5xl font-bold text-[#57C690]">Projetos já enraizados</h2>
             </div>
         </div>
     )
