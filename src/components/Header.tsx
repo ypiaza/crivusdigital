@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className='fixed w-full z-50 flex items-center justify-between p-4 md:px-10 md:py-4 bg-[#F9F9F9]/50 backdrop-blur border-b-white/10 shadow-2xl'>
+        <div className='fixed w-full z-50 flex items-center justify-between p-4 md:px-10 md:py-4 bg-[#F9F9F9]/80 backdrop-blur border-b-white/10 shadow-xl'>
             <div className='flex items-center justify-center'>
                 <img className='w-10 md:hidden' src={logoMobile} alt="logo" />
                 <img className='w-20 hidden md:block' src={logo} alt="logo" />
