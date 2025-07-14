@@ -22,5 +22,11 @@ export const testimonials: Testimonial[] = [
     photo: "https://randomuser.me/api/portraits/women/68.jpg",
     message:
       "Serviço ágil, comunicação clara e resultado impecável. A Crivus faz a diferença!"
+  },
+  {
+    name: "Juliana Pereira",
+    photo: "https://randomuser.me/api/portraits/women/68.jpg",
+    message:
+      "Serviço ágil, comunicação clara e resultado impecável. A Crivus faz a diferença!"
   }
 ];

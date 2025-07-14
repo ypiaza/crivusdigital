@@ -36,7 +36,7 @@ const ContactForm = () => {
         <div>
             <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-10 rounded space-y-4">
                 <div>
-                    <label className="block mb-1 font-semibold text-[#161616]/80">Nome</label>
+                    <label className="block mb-1 font-semibold text-[#161616]/75">Nome</label>
                     <input
                         type="text"
                         name="name"

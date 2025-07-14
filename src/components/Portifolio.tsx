@@ -5,11 +5,12 @@ const Portifolio = () => {
     return (
         <div className="relative h-[99vh] flex items-center justify-evenly flex-col bg-center bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url(${background})`
+                backgroundImage: `url(${background})`,
+                backgroundPosition: 'fixed'
             }}
         >
 
-            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+            <div className="absolute inset-0 bg-black/90 "></div>
 
             {/* Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/natureza-textura-plantar-planta-4429283/ */}
 
@@ -18,7 +19,7 @@ const Portifolio = () => {
             </div>
             <div className="grid grid-cols-4 gap-5 z-10 cursor-pointer">
                 {projects.map((item) => 
-                    <div className="w-[18rem] h-[18rem] flex flex-col items-center justify-between bg-[#fafafa] rounded shadow hover:scale-3d hover:scale-105 hover:shadow-2xl hover:z-10 transition-all duration-300">
+                    <div className="max-w-[18rem] h-[15rem] flex flex-col items-center justify-between bg-[#fafafa] rounded shadow hover:scale-3d hover:scale-105 hover:shadow-2xl hover:z-10 transition-all duration-300">
                         <img className="h-[70%] max-w-full shadow" src={item.img} alt={item.name} />
                         <div className="h-[30%] flex items-center justify-center">
                             <p className="font-semibold text-[#161616]">{item.name}</p>

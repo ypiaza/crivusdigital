@@ -1,5 +1,5 @@
 import logo from '../assets/crivus-logo.svg'
-import logoMobile from '../assets/crivus-logo-mobile.png'
+import logoMobile from '../assets/logo-clean.svg'
 import { useState } from 'react'
 import { BiMenu } from 'react-icons/bi'
 import { CgClose } from 'react-icons/cg'
@@ -21,47 +21,67 @@ const Header = () => {
                     <button onClick={() => setIsOpen(false)} className={`md:hidden bg-[#161616] p-2 text-2xl rounded text-white ${isOpen ? '' : 'hidden'}`} ><CgClose /></button>
 
                     <ul className={`absolute md:hidden right-0
-                     rounded bg-[#161616]/80 text-[#F9F9F9] p-5 flex flex-col gap-4 font-semibold ${isOpen ? '' : 'hidden'}`}>
-                        <li>Quem Somos</li>
-                        <li>Portifólio</li>
-                        <li>Depoimentos</li>
+                     rounded bg-[#161616]/80 text-[#F9F9F9] z-10 p-5 flex flex-col gap-4 font-semibold ${isOpen ? '' : 'hidden'}`}>
+                        <li onClick={() => setIsOpen(false)}>
+                            <Link
+                                to='about'
+                                smooth={true}
+                                duration={500}
+                                offset={1}>
+                                Quem Somos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to='portifolio'
+                                smooth={true}
+                                duration={500}
+                                offset={1}>
+                                Portifolio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to='testimonials'
+                                smooth={true}
+                                duration={500}
+                                offset={1}>
+                                Depoimentos
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
-                <ul className='hidden md:flex md:gap-6 font-semibold cursor-pointer text-[#161616] '>
+                <ul className='hidden md:flex md:gap-6  text-md font-semibold cursor-pointer text-[#161616] '>
                     <li className='hover:text-[#57C690] transition-all duration-300'>
                         <Link
-                        to='about'
-                        smooth={true}
-                        duration={500}
-                        offset={1}>
+                            to='about'
+                            smooth={true}
+                            duration={500}
+                            offset={1}>
                             Quem Somos
                         </Link>
                     </li>
                     <li className='hover:text-[#57C690] transition-all duration-300'>
                         <Link
-                        to='portifolio'
-                        smooth={true}
-                        duration={500}
-                        offset={1}>
+                            to='portifolio'
+                            smooth={true}
+                            duration={500}
+                            offset={1}>
                             Portifolio
                         </Link>
                     </li>
                     <li className='hover:text-[#57C690] transition-all duration-300'>
                         <Link
-                        to='testimonials'
-                        smooth={true}
-                        duration={500}
-                        offset={1}>
+                            to='testimonials'
+                            smooth={true}
+                            duration={500}
+                            offset={1}>
                             Depoimentos
                         </Link>
                     </li>
                 </ul>
             </nav>
-
-            <div className='hidden md:block'>
-                <button className='bg-[#161616] py-2 px-4 rounded font-semibold text-[#F9F9F9] hover:bg-[#57C690] hover:text-[#161616]/90 transition-all duration-300 cursor-pointer'>Entre em contato</button>
-            </div>
         </div>
     )
 }
